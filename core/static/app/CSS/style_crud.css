@@ -1,0 +1,111 @@
+.container {
+   
+    margin: 30px 240px 60px 240px;
+    padding: 0spx 100px 100px 100px;
+}
+
+#customers {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+
+}
+
+#customers td,
+#customers th {
+    border: 1px solid rgb(17, 4, 4);
+    padding: 6px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(114, 114, 114);
+    color:black;
+}
+
+#customers #mid {
+    text-align: center;
+    color: skyblue;
+}
+
+#customers #up {
+    background-color: gray;
+    border-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+}
+
+#customers #del {
+    background-color: red;
+    border-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+}
+
+#customers button {
+    width: 100%;
+    color: rebeccapurple;
+    
+}
+
+
+.container1 #new {
+    background-color: gray;
+    border-color:white;
+    border-radius: 50px;
+    padding: 8px;
+    color: skyblue;
+}
+
+.container2 #new1 {
+    background-color: skyblue;
+    border-color:black;
+    border-radius: 5%;
+    padding: 8px;
+    color: white;
+}
+
+h1 {
+    color: rgb(114, 114, 114);
+}
+
+.container1 input {
+    padding: 8px;
+}
+
+.container2 input {
+    padding: 8px;
+}
+
+.container1 {
+    margin: 80px 240px 60px 240px;
+    padding: 0px 100px 100px 100px;
+}
+
+.container2 {
+    margin: 80px 240px 60px 240px;
+    padding: 0px 100px 100px 100px;
+    
+}
+
+.container #new3 {
+
+    padding: 8px;
+    background-color: rgb(114, 114, 114);
+    color:skyblue;
+    border-radius: 50px;
+    border-color: rgb(114, 114, 114);
+}

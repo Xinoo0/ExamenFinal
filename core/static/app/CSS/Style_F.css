@@ -1,0 +1,53 @@
+body{
+margin: 0%;
+padding: 0%;
+height: 100vh;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: medium;
+background: linear-gradient(120deg,rgb(114, 114, 114),white);
+text-decoration: red;
+text-align: center;
+}
+
+.container-fluid{
+background-color: rgb(209, 90, 90);
+font-size: large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+padding: 0%;
+}
+form{
+width: 30%;
+margin: auto;
+padding: 12px 20px;
+}
+fieldset{
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50% , -50%);
+width: 500px;
+background: rgb(122, 44, 44);
+border-radius: 10px;
+}
+.Error{
+background: rgb(114, 114, 114);
+margin-left: 4cm;
+margin-right: 4cm;
+border-radius: 10px;
+}
+input [type="sumit"]{
+width: 100%;
+height: 50%;
+}
+
+footer{
+background-color:  rgb(114, 114, 114);
+padding: 0em 0;
+text-align: center;
+position: fixed;
+left: 0px;
+bottom: 0;
+width: 100%;
+}

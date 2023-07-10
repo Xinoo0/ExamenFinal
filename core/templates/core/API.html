@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'app/css/Style_API.css' %}">
+    <u><h2>Referencias cercanas a nuestra dependencia</h2></u>
+
+    <div id="map">
+        <script src="{% static 'app/JavaScript/API.js' %}"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    </div>
+
+
+{% endblock %}

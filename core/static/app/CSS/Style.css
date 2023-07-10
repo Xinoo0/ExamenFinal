@@ -1,0 +1,270 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(165, 68, 68);
+    position: relative;
+    padding-bottom: 10em ;
+    min-height: 100vh;
+    margin: 0;
+}
+.container-fluid{
+    background-color: rgb(155, 69, 69);
+}
+.navbar{
+    padding: 0%;
+}
+footer{
+    background-color:  rgb(139, 69, 69);
+    padding: 0em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.p_index{
+    margin-left: 50px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.p_about{
+    margin-left: 50px;
+}
+.imagen1{
+    width: 600px;
+    padding: 1em;
+    margin: 0.5em;
+}
+.imagen2{
+    width: 600px;
+    padding: 1em;
+    margin: 0.5em;
+}
+.imagen3{
+    width: 600px;
+    padding: 1em;
+    margin: 0.5em;
+}
+.Nosotros{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.seg_p{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.Valores{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+.ubi{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 20px
+    rgba(1, 1, 1, 0.5);
+    cursor: pointer;
+}
+.contenedor figure img{
+    width: 350px;
+    height: 250px;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(141, 76, 76, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor figure:hover> .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover> .capa h2{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.contenedor figure:hover> img{
+    transform: scale(1.3);
+}
+.contenedor figure .capa h2{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 20px;
+}
+.contenedor figure .capa p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.0;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+.g_img2{
+    width: 600px;
+    padding: 1em;
+    
+}
+.titulo2{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_2{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+    
+}
+
+
+
+.g_img3{
+    width: 600px;
+    padding: 1em;
+}
+.titulo3{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_3{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+.g_img4{
+    width: 600px;
+    padding: 1em;
+
+}
+.titulo4{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_4{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+.g_img5{
+    width: 600px;
+    height: 300px;
+    padding: 1em;
+}
+.titulo5{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_5{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+.g_img6{
+    width: 600px;
+    padding: 1em;
+
+}
+.titulo6{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_6{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+.g_img7{
+    width: 600px;
+    padding: 1em;
+}
+.titulo7{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_7{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+.g_img8{
+    width: 600px;
+    padding: 1em;
+}
+.titulo8{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.parr_8{
+    padding: 1em;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+.porta1{
+    display: flex;
+    justify-content: center;
+}

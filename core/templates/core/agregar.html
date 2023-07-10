@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'app/css/Style_crud.css' %}">
+
+<div class="container1">
+    <h1>Agregar Producto</h1>
+    <form action="{% url 'agregarrec' %}" method="post">
+        {% csrf_token %}
+        <label for="">Producto</label><br><br>
+        <input type="text" name="producto"><br><br>
+        <label for="">Descripcion</label><br><br>
+        <input type="text" name="descripcion"><br><br>
+        <label for="">Precio</label><br><br>
+        <input type="text" name="precio"><br><br>
+        <button type="submit" id="new">Agregar</button>
+    </form>
+</div>
+
+{% endblock %}
