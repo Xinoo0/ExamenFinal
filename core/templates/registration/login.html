@@ -3,6 +3,16 @@
 {% load static %}
 
 {% block content %}
+<body>
+  <header>
+    <div class="absolute">
+      <video onloadeddata="this.muted=true" autoplay>
+        <source src="{% static 'video-iniciosesion.mp4' %}">
+      </video>
+    </div>
+  </header>
+</body>
+
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-lg-6">

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.admin.views.decorators import staff_member_required
-from django.contrib.auth import logout
+from django.contrib.auth import login, logout, authenticate
 from .forms import CustomUserCreationForm, ContactoForm
 from django.contrib.auth import authenticate, login
 from .models import Producto
@@ -13,9 +13,7 @@ def about(request):
     return render(request,'core/about.html')
 
 def formulario(request):
-    data = {
-        'form': ContactoForm
-    }
+    data = {'form': ContactoForm}
     if request.method == 'POST':
         formulario = ContactoForm(data=request.POST)
         if formulario.is_valid():

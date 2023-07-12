@@ -6,8 +6,6 @@ class Producto(models.Model):
     descripcion = models.CharField(max_length=50)
     precio = models.CharField(max_length=7)
     
-
-
 # FORMULARIO CONTACTO
 opciones_consultas = [
     [0, "consulta"],
