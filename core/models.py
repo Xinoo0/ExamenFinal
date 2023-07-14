@@ -22,3 +22,18 @@ class Contacto(models.Model):
 
     def __str__(self):
         return self.nombre
+    
+    
+class ContactoReal(models.Model):
+    name = models.CharField(max_length=20)
+    apellidoP = models.CharField(max_length=20)
+    apellidoM = models.CharField( max_length=20)
+    rut = models.CharField(max_length=12)
+    opciones_genero = [
+        [0, "masculino"],
+        [1, "femenino"],
+        [2, "otros"]
+    ]
+    correo = models.EmailField()
+    numero = models.CharField(max_length=12)
+    

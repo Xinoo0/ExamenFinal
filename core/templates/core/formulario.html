@@ -3,27 +3,59 @@
 {% load static %}
 
 {% block content %}
-<div class="row">
-  <div class="col-12 col-md-6 offset-md-3">
-      <div class="card">
-          <div class="card-body">
-              <section class="contact-form">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-md-6">
-                              <h2 class="text-center">Contáctenos</h2>
-                          <form method="POST" class="text-center">
-                              {% csrf_token %}
-                              {{ form.as_p }}
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-                          </form>
-                          {{mensaje}}
-                          </div>
-                      </div>
-                  </div>
-              </section>
-          </div>
-      </div>
+  <link rel="stylesheet" href="{% static 'app/css/Style_F.css' %}">
+
+  <div class="container text-center">
+    <form action="#" method="get">
+        <fieldset>
+            <u><h2>Ingreso de datos</h2></u>
+            <label for="NAME">(*)Nombre:</label>
+            <input type="text" id="name" minlength="3" maxlength="20" placeholder="Nombre" required>
+            <br>
+            <br>
+            <label for="Apellido Paterno ">(*)Apellido P:</label>
+            <input type="text" id="ApellidoP" minlength="3" maxlength="20" placeholder="Apellido Paterno" required>
+            <br>
+            <br>
+            <label for="Apellido Materno">(*)Apellido M:</label>
+            <input type="text" id="ApellidoM" minlength="3" maxlength="20" placeholder="Apellido Materno " required>
+            <br>
+            <br>
+            <label for="rut">(*)Rut:</label>
+            <input type="text" id="rut" minlength="9" maxlength="12" placeholder="Rut " required>
+            <br>        
+            <br>
+            <label for="genero">Genero: 
+                <select name="genero" id="genero" >
+                    <option value="">Seleccione su genero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </label>
+
+            <br>
+            <br>
+            <label for="Correo">Email:</label>
+            <input type="Email" id="Correo"  placeholder="Correo Electronico" >
+            <br>
+            <br>
+            <label for="numero">Numero de telefono:</label>
+            <input type="text" id="numero" minlength="9" maxlength="12" placeholder="Numero telefonico" >
+            <br>
+            <br>
+            <input type="submit" id="btnEnviar" value="enviar" onclick='return subirFormulario()'>
+            <br>
+            
+            <div class="Error" id="error"></div>
+            <br>
+            
+            <a href="{% url 'home' %}"><button type="button" class="btn btn-outline-secondary">Volver</button></a>
+            <br>
+            <br>
+        </fieldset>
+    </form>
   </div>
-</div>
+
+  <script src="{% static 'app/JavaScript/Formulario.js' %}"></script>
 {% endblock %}

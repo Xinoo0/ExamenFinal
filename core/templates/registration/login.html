@@ -1,36 +1,28 @@
 {% extends 'core/base.html' %}
 
+{% block content %}
+
 {% load static %}
 
-{% block content %}
-<body>
-  <header>
-    <div class="absolute">
-      <video onloadeddata="this.muted=true" autoplay>
-        <source src="{% static 'video-iniciosesion.mp4' %}">
-      </video>
-    </div>
-  </header>
-</body>
+<h3>Login</h3>
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-6">
-      <div class="card">
+<br>
+
+
+<form action="" method="post">
+    
+    {% csrf_token %}
+    <div class="card mx-auto" style="width: 30rem;">
         <div class="card-body">
-          <h2 class="card-title text-center">Inicio de Sesion</h2>
-          
-          <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <div class="text-center">
-              {{error}}
-              <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
-            </div>
-          </form>
+          <h5 class="card-title">Ingrese sus Credenciales</h5>
+          {{ form }}
+          <a href="{% url 'home' %}" class="card-link">Inicio</a> 
+          <!--<a href="{% url 'register'%}" class="card-link">Registrarse</a>/!-->
+
+          <button class="btn btn-sm btn-primary float-end" type="submit">Iniciar Sesion</button>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-{% endblock %}
+       
+</form>
+
+    {% endblock %}
